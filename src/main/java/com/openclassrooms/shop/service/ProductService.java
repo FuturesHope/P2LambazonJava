@@ -45,6 +45,11 @@ public class ProductService {
 	public Product getProductById(Long productId)
 	{
 		// TODO implement the method
+		for(Product product : getAllProducts()) {
+			if(product.getId().equals(productId)) {
+				return product;
+			}
+		}
 		return null;
 
 	}
