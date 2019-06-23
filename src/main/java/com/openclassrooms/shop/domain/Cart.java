@@ -26,6 +26,7 @@ public class Cart {
     	for(CartLine cartLine : cartLineList) {
     		if(cartLine.getProduct().equals(product)) {
     			cartLine.setQuantity(cartLine.getQuantity() + quantity);
+    			return;
     		}
     		    			
     	}
