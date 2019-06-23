@@ -62,5 +62,11 @@ public class ProductService {
 	{
 
 		// TODO implement the method
+		for(Product product : getAllProducts()) {
+			if(product.getId().equals(productId)) {
+				product.setStock(product.getStock()-quantity);
+			}
+		}
+		return;
 	}
 }
